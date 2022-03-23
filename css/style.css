@@ -18,7 +18,7 @@ padding: 10px;
   padding: 20px 0px;
 }
 
-.container-fluid{
+.element-container{
   background-color: lightgray;
   gap: 25px;
 }
@@ -32,6 +32,7 @@ padding: 10px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  box-shadow: 1px 1px gray;
 }
 
 .orange{

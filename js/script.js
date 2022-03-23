@@ -121,7 +121,7 @@ function createIconContainer(obj) {
 	element.className = 'icon-container'
 	container.appendChild(element);
 	element.innerHTML = `<i class="${obj.family} ${obj.prefix}${obj.name} ${obj.color} fa-2x"></i>
-	<p class="text-uppercase">${obj.name}</p>`
+	<p class="text-uppercase fw-bold">${obj.name}</p>`
 }
 
 // ciclo per creare tutti gli elementi dell'array

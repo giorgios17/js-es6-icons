@@ -131,15 +131,12 @@ allIcons.forEach((element, index, array) => {
 
 //filtro solo animali
 const animals = allIcons.filter((element, index, array) => element.type === 'animal');
-console.log('Animali', animals);
 
 //filtro solo vegetali
 const vegetables = allIcons.filter((element, index, array) => element.type === 'vegetable');
-console.log('Vegetali', vegetables);
 
 //filtro solo utenti
 const users = allIcons.filter((element, index, array) => element.type === 'user');
-console.log('Utenti', users);
 
 //funzione mostra solo selezionati
 function showOnlySelected() {

@@ -115,6 +115,7 @@ const allIcons = [
 
 const container = document.querySelector('.element-container');
 
+//creo div icon-container dentro element-container con l'elemento html
 function createIconContainer(obj) {
 	const element = document.createElement('div');
 	element.className = 'icon-container'
@@ -123,19 +124,24 @@ function createIconContainer(obj) {
 	<p class="text-uppercase">${obj.name}</p>`
 }
 
+// ciclo per creare tutti gli elementi dell'array
 allIcons.forEach((element, index, array) => {
 	createIconContainer(element)
 });
 
+//filtro solo animali
 const animals = allIcons.filter((element, index, array) => element.type === 'animal');
 console.log('Animali', animals);
 
+//filtro solo vegetali
 const vegetables = allIcons.filter((element, index, array) => element.type === 'vegetable');
 console.log('Vegetali', vegetables);
 
+//filtro solo utenti
 const users = allIcons.filter((element, index, array) => element.type === 'user');
 console.log('Utenti', users);
 
+//funzione mostra solo selezionati
 function showOnlySelected() {
 	let selected = document.getElementById('type').value;
 	container.innerHTML = '';

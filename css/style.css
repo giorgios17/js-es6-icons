@@ -9,6 +9,7 @@ body {
 
 header h1{
 color: #29b1dd;
+padding: 10px;
 }
 
 .select-container{
@@ -41,4 +42,7 @@ color: #29b1dd;
 }
 .green{
   color: green;
+}
+#label-select{
+  color: white;
 }

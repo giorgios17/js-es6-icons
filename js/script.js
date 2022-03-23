@@ -120,11 +120,19 @@ function createIconContainer(obj) {
 	element.className = 'icon-container'
 	container.appendChild(element);
 	element.innerHTML = `<i class="${obj.family} ${obj.prefix}${obj.name} ${obj.color} fa-2x"></i>
-	<p>${obj.name}</p>`
+	<p class="text-uppercase">${obj.name}</p>`
 }
 
 allIcons.forEach((element, index, array) => {
 	createIconContainer(element)
 });
 
+const animals = allIcons.filter((element, index, array) => element.type === 'animal');
+console.log('Animali', animals);
+
+const vegetables = allIcons.filter((element, index, array) => element.type === 'vegetable');
+console.log('Vegetali', vegetables);
+
+const users = allIcons.filter((element, index, array) => element.type === 'user');
+console.log('Utenti', users);
 

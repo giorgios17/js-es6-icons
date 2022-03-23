@@ -136,3 +136,8 @@ console.log('Vegetali', vegetables);
 const users = allIcons.filter((element, index, array) => element.type === 'user');
 console.log('Utenti', users);
 
+function showSelected(selected) {
+	let value = document.getElementById('filter').value;
+
+
+}

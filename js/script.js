@@ -163,3 +163,32 @@ function showOnlySelected() {
 		});
 	}
 };
+
+//BONUS
+//1- modificare la struttura dati fornita e valorizzare la proprietà "color" in modo dinamico: 
+//generare in modo casuale un codice colore, sapendo che la notazione esadecimale è formata 
+//dal simbolo "#" seguito da 6 caratteri alfanumerici compresi tra 0 e 9 e A e F.
+const alfaNumerici = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'b', 'c', 'd', 'e', 'f'];
+
+function numeroRandomRange(min, max) {
+	const range = (max - min) + 1;
+	const numeroRandom = Math.floor(Math.random() * range + min);
+	return numeroRandom;
+}
+
+const colorRandom = [];
+/*
+for (let i = 0; i < 6; i++) {
+	let toPush = alfaNumerici[numeroRandomRange(0, 15)];
+	colorRandom.push(toPush)
+}
+
+console.log(colorRandom);
+for (let i = 0; i < animals.length; i++) {
+	animals[i].color = '#' + colorRandom.join('');
+}
+
+console.log(animals)
+*/
+//2- popolare le options della select della milestone 3 dinamicamente.
+

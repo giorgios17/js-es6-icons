@@ -159,4 +159,4 @@ function showOnlySelected() {
 			createIconContainer(element)
 		});
 	}
-}
+};

@@ -136,17 +136,12 @@ console.log('Vegetali', vegetables);
 const users = allIcons.filter((element, index, array) => element.type === 'user');
 console.log('Utenti', users);
 
-let value = document.getElementById('filter').value;
+let value = document.getElementById('type').value;
 if (value == 'animal') {
-	container.innerHTML = '';
-	animals.forEach((element, index, array) => {
-		createIconContainer(element)
-	});
+	console.log(value);
 }
 else if (value == 'vegetable') {
-	container.innerHTML = '';
-	vegetables.forEach((element, index, array) => {
-		createIconContainer(element)
-	});
+	console.log(value);
+
 }
-else { }
+else { console.log(value) }

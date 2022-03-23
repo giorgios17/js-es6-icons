@@ -119,7 +119,7 @@ function createIconContainer(obj) {
 	const element = document.createElement('div');
 	element.className = 'icon-container'
 	container.appendChild(element);
-	element.innerHTML = `<i class="${obj.family} ${obj.prefix}${obj.name} fa-2x"></i>
+	element.innerHTML = `<i class="${obj.family} ${obj.prefix}${obj.name} ${obj.color} fa-2x"></i>
 	<p>${obj.name}</p>`
 }
 

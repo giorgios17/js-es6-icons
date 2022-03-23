@@ -32,3 +32,13 @@ color: #29b1dd;
   align-items: center;
   flex-direction: column;
 }
+
+.orange{
+  color: orange;
+}
+.blue{
+  color: blue;
+}
+.green{
+  color: green;
+}
